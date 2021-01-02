@@ -30,11 +30,35 @@ pre {
 
 }
 
-table {
-    border:5px solid black;
-    padding: 10px;
-    margin-top: initial;
+table ,th ,td{
+    border:7px solid #C2B1AF;
+    height: 50px;
+    vertical-align: center;
+    
 }
+
+table{
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-collapse: collapse;
+    color: #540000;
+    }
+
+th{   
+    font-size: 14px; 
+    height: 70px;   
+}
+
+td{
+    padding: 10px;
+   
+    }
+    
+tr:nth-child(even) {background-color: #F2F2F2;}    
+
+
 
 header {
     background-color: #E7DDDD;
@@ -52,6 +76,8 @@ nav {
     margin-top: 6px;
     padding: 0px;
     color: #AB2222;
+    border: 5px solid #C2B1AF;
+    border-radius: 20px;
     
     
 }
@@ -69,7 +95,7 @@ aside {
     margin: 20px;
     padding: 80px;
     background-color: #E7DDDD;
-    font-size: 12px;
+    font-size: 14px;
     margin-left: 800px;
     margin-top: 20px;
     color: #540000;
@@ -106,7 +132,7 @@ ul {
     margin: 20px;
     padding: 80px;
     background-color: #E7DDDD;
-    font-size: 12px;
+    font-size: 14px;
     margin-right: 800px;
     margin-top: 20px;
     color: #540000;
