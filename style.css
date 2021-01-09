@@ -129,7 +129,7 @@ ul {
 }
 
 .lefttext {
-    font-family: monospace;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
     margin: 20px;
     padding: 80px;
     background-color: #E7DDDD;
@@ -151,6 +151,7 @@ footer p {
 .y {
     border: 5px solid #E7DDDD;
     border-radius: 20px;
+    
 }
 
 .foto{
@@ -166,15 +167,7 @@ footer p {
      }
 
 
-.video{
-    float: left;
-    width: 800px;
-    height: auto;
-    margin-top: 10px;
-    margin-left: 100px;
-    
-    
-    }    
+
                 
 
 
