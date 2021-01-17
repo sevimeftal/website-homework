@@ -69,19 +69,23 @@ table{
     margin-bottom: 50px;
     border-collapse: collapse;
     color: #540000;
+    
     }
 
 th{   
     font-size: 14px; 
-    height: 70px;   
+    height: 70px; 
+    background-color: #E7DDDD;
 }
 
 td{
     padding: 10px;
+    
+    
+    Background-color: #F2F2F2; 
    
     }
-    
-tr:nth-child(even) {background-color: #F2F2F2;}    
+       
 
 
 
@@ -203,11 +207,27 @@ footer p {
 	padding: 20px;
 	background-color: #E7DDDD;
 	font-size: 18px;
-	
 	color: #540000;
-    
+    }  
 
-}     
+.my{
+color: #540000;
+font-family: "Trebuchet MS", Helvetica, sans-serif;
+text-align: center;
+}  
+
+button{
+position: relative;
+margin-top: 30px;
+margin-left: 850px;
+margin-bottom: 30px;
+padding: 15px;
+background-color:#E7DDDD; 
+color:#540000; 
+width:%100;
+}
+
+
      
 
 
