@@ -479,22 +479,34 @@
 
 <div id="xyz">
 
-  Adı-Soyadı:
+  <label>Adı-Soyadı</label>
   <input type="text"name="ad" id="ad" onblur="this.style.color='#540000'">
-  Branşı:
+  <label>Branşı:</label>
   <input type="text"name="ders" id="ders"onblur="this.style.color='#540000'" >
-  Alanı:
-  <input type="text"name="alan" id="alan" onblur="this.style.color='#540000'" >
+  <label>Alanı:</label>
+  <select type="text"name="alan" id="alan" onblur="this.style.color='#540000'" >
+	  <option value="SAY">SAY</option>
+	  <option value="EA">EA</option>
+	  <option value="SÖZ">SÖZ</option>
+	  <option value="YETENEK">YETENEK</option>
+	  </select>
+	  
 <button
 onclick="kadroEntry('ad','ders','alan')"> Ekle </button>
 </div>
 
 <div id="xyzt">
  
-  Branşı:
-  <input type="text"name="spor" id="spor" onblur="this.style.color='#540000'">
-  Takım Adı:
+  <label>Branşı:</label>
+  <select type="text"name="spor" id="spor" onblur="this.style.color='#540000'">
+	  <option value="Basketbol">Basketbol</option>
+	  <option value="Voleybol">Voleybol</option>
+	  <option value="Futbol">Futbol</option>
+	  <option value="Jimnastik">Jimnastik</option>
+  <label>Takım Adı:</label>
   <input type="text"name="takim" id="takim"onblur="this.style.color='#540000'" >
+  
+  
  
 <button
 onclick="sporEntry('spor','takim')"> Ekle </button>
