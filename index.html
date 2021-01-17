@@ -459,7 +459,7 @@
 	
 		<p class="t"> -ÖDEV-2-</p>
 
-		 <table>
+		 <table id="kadroTable">
             <tr>
                 <th> Ad-Soyad</th>
                 <th> Branşı </th>
@@ -467,7 +467,7 @@
                 
             </tr>
             </table>    
-            <table>
+            <table id="sporTable">
             <tr>
                 <th> Spor Branşı</th>
                 <th> Takım Adı </th>
@@ -475,6 +475,7 @@
                 
      
 <button type="button" onclick="document.getElementById('xyz').style.display='block'">Öğretmen Ekle</button>
+<button type="button" onclick="document.getElementById('xyzt').style.display='block'">Takım Ekle</button>
 
 <div id="xyz">
 
@@ -485,10 +486,8 @@
   Alanı:
   <input type="text"name="alan" id="alan" onblur="this.style.color='#540000'" >
 <button
-onclick="insertEntry('ad','ders','alan')"> Ekle </button>
+onclick="kadroEntry('ad','ders','alan')"> Ekle </button>
 </div>
-
-<button type="button" onclick="document.getElementById('xyzt').style.display='block'">Takım Ekle</button>
 
 <div id="xyzt">
  
@@ -498,11 +497,59 @@ onclick="insertEntry('ad','ders','alan')"> Ekle </button>
   <input type="text"name="takim" id="takim"onblur="this.style.color='#540000'" >
  
 <button
-onclick="insertEntry('spor','takim')"> Ekle </button>
+onclick="sporEntry('spor','takim')"> Ekle </button>
 </div>
 
 
 <script>
+  function kadroEntry(adId, dersId, alanId){
+  var ad = document.getElementById(adId);
+  var ders = document.getElementById(dersId);
+  var alan = document.getElementById(alanId);
+  
+  var myTable = document.getElementById("kadroTable");
+  var newRow = document.createElement("TR");
+  newRow.setAttribute("id","myRow");
+  kadroTable.appendChild(newRow);
+  
+  var adTd = document.createElement("TD");
+  var adNode = document.createTextNode(ad.value);
+  adTd.appendChild(adNode);
+  newRow.appendChild(adTd);
+ 
+  var dersTd = document.createElement("TD");
+  var dersNode = document.createTextNode(ders.value);
+  dersTd.appendChild(dersNode);
+  newRow.appendChild(dersTd);
+  
+  var alanTd = document.createElement("TD");
+  var alanNode = document.createTextNode(alan.value);
+  alanTd.appendChild(alanNode);
+  newRow.appendChild(alanTd);
+  }
+  
+  function sporEntry(sporId, takimId){
+  var spor = document.getElementById(sporId);
+  var takim = document.getElementById(takimId);
+  
+  
+  var sporTable = document.getElementById("sporTable");
+  var newRow = document.createElement("TR");
+  newRow.setAttribute("id","myRow");
+  sporTable.appendChild(newRow);
+  
+  var sporTd = document.createElement("TD");
+  var sporNode = document.createTextNode(spor.value);
+  sporTd.appendChild(sporNode);
+  newRow.appendChild(sporTd);
+ 
+  var takimTd = document.createElement("TD");
+  var takimNode = document.createTextNode(takim.value);
+  takimTd.appendChild(takimNode);
+  newRow.appendChild(takimTd);
+  
+
+  }
   
 </script>
     </section>
