@@ -474,10 +474,10 @@
             </table>    
                 
      
-<button type="button" onclick="document.getElementById('xyz').style.display='block'">Öğretmen Ekle</button>
-<button type="button" onclick="document.getElementById('xyzt').style.display='block'">Takım Ekle</button>
+<button type="button" onclick="showForm('okadro','otakim')">Öğretmen Ekle</button>
+<button type="button" onclick="showForm('otakim','okadro')">Takım Ekle</button>
 
-<div id="xyz">
+<div id="okadro">
 
   <label>Adı-Soyadı</label>
   <input type="text"name="ad" id="ad" onblur="this.style.color='#540000'">
@@ -495,7 +495,7 @@
 onclick="kadroEntry('ad','ders','alan')"> Ekle </button>
 </div>
 
-<div id="xyzt">
+<div id="otakim">
  
   <label>Branşı:</label>
   <select type="text"name="spor" id="spor" onblur="this.style.color='#540000'">
@@ -514,6 +514,11 @@ onclick="sporEntry('spor','takim')"> Ekle </button>
 
 
 <script>
+	
+  function showForm(show,hide) {
+  document.getElementById(show).style.display="block";
+  document.getElementById(hide).style.display="none";
+  }	
   function kadroEntry(adId, dersId, alanId){
   var ad = document.getElementById(adId);
   var ders = document.getElementById(dersId);
