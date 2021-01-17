@@ -538,6 +538,10 @@ onclick="sporEntry('spor','takim')"> Ekle </button>
   var alanNode = document.createTextNode(alan.value);
   alanTd.appendChild(alanNode);
   newRow.appendChild(alanTd);
+  
+  ad.value = "";
+  ders.value = "";
+  alan.value = "SAY";
   }
   
   function sporEntry(sporId, takimId){
@@ -559,6 +563,9 @@ onclick="sporEntry('spor','takim')"> Ekle </button>
   var takimNode = document.createTextNode(takim.value);
   takimTd.appendChild(takimNode);
   newRow.appendChild(takimTd);
+  
+  takim.value = "";
+  spor.value = "Basketbol";
   
 
   }
