@@ -1,25 +1,25 @@
 
+
+
+/* tüm sayfaları saklar. */
 .page {
 	display: none;
 }
 
-
+/* ilk sayfayı görüntüler. */
 #Anasayfa {
 	display: block;
 }
 
-
+/* üzerine tıklandığında sayfanın açılmasını sağlar. */
 :target {
 	display: block;
 }
 
-	
+/* başka bir sayfaya tıklandığında diğer sayfayı gizler. */	
 	:target ~ #Anasayfa {
 		display: none;
 	}
-
-
-
 
 
 body {
@@ -86,15 +86,9 @@ th{
 
 td{
     padding: 10px;
-    
-    
-    Background-color: #F2F2F2; 
-   
-    }
+    background-color: #F2F2F2; 
+   }
        
-
-
-
 header {
     background-color: #E7DDDD;
     margin-top: initial;
